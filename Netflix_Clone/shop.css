@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    
+}
+section nav img{
+    width: 9vh;
+    height: 4vw ;
+}
+section nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+section nav a{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+section .content{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin-top: 8%;
+}
+section .content h1{
+    font-size: 2.5rem;
+}
+section .content h4{
+    margin: 20px;
+}
+section .login{
+    display: flex;
+    margin: 20px;
+    margin-left: 30%;
+}
+section .login form input{
+    width: 30vw;
+    height: 10vh;
+ }
+ section .login button{
+    background: transparent;
+    width: 13vw;
+    height: 10vh;
+    border: 2px solid red;
+    font-size: 20px;
+    color: white;
+   
+ }
+ section .login button:hover{
+    background-color: red;
+    transition: background-color 1s;
+ }
+ section .login button:active{
+    background-color: rgb(97, 10, 10);
+    border: 3px solid rgb(88, 0, 0);
+ }
+.item1{
+    display: flex;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: black;
+    margin-top: 10px;
+    height: 80vh;
+}
+ .item1 .content{
+     /* border: 2px solid red;  */
+    padding: 5%;
+    width: 50vw;
+    margin: 5%;
+    padding-top: 10%;
+    
+ } 
+
+.item1 img{
+    height: 50vh;
+    margin-top: 75px;
+}
+
+
+.item2{
+    display: flex;
+
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: black;
+    margin-top: 10px;
+    height: 80vh;
+}
+ .item2 .content2{
+     /* border: 2px solid red;  */
+    padding: 5%;
+    width: 50vw;
+    margin: 5%;
+    padding-top: 10%;
+    margin: 20px;
+ } 
+
+.item2 img{
+    height: 50vh;
+    margin-top: 75px;
+    margin-left: 20px;
+}
+.item1 .gif #giphy{
+    width: 300px;
+    height: 200px;
+    
+}
+.item1 .gif{
+    text-align: center;
+}
+
+/* media */
+@media (max-width: 680px) {
+    .item1{
+        display: block;
+        height: 63vh;
+        padding-bottom: 5vh;
+    }
+    .item1 .content{
+        height: 159px;
+        text-align: center;
+        margin: 0px;
+        width: 100vw;
+    }
+    .item1 .img{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .item1 img{
+        margin-top: 0px;
+        height: 200px;
+        width: 270px;
+    }
+
+    .item2{
+        display: block;
+        width: 100vw;
+        justify-content: center;
+         height: 59vh;
+         padding-top: 5vh;
+    }
+    .item2 .content2{
+        height: 159px;
+        text-align: center;
+        margin: 0px;
+        width: 100vw;
+    }
+    .item2 .img2{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .item2 img{
+        margin-top: 0px;
+        height: 200px;
+        width: 270px;
+    }
+    .item1 .gif #giphy{
+        margin: 20px 40px;
+    }
+    section .login form input{
+        height: 5vh;
+    }
+    section .login button{
+        height: 5vh;
+        font-size: 10px;
+    }
+    .question .extra{
+        margin-left: 74px;
+    }
+
+    body{
+        background-color: black;
+    }
+    section{
+        background-image: none;
+    }
+    footer {
+        background-color: red;
+    }
+   
+}
+
+  .question{
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    /* text-align: center; */
+    border-top: 10px solid rgb(34, 34, 34);
+  }
+  .question h1{
+    margin: 50px;
+  }
+  div .extra {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 0px;
+    background-color: rgb(34, 34, 34) ;
+    justify-content: space-between;
+    width: 60vw;
+    padding: 10px;
+    margin-left: 17vw;
+    margin-top: 5px;
+  }
+  .question .answer{
+    background-color: rgb(34, 34, 34);
+    margin: 2px;
+    width: 60vw;
+    margin-left: 17vw;
+    text-align: left;
+    padding: 30px;
+    display: none;
+    font-size: 24px;
+  }
+  .question .align{
+    text-align: center;
+  }
+
+  #logo{
+    width: 50px;
+    height: 50px;
+  }
+  .question .extra:hover{
+    cursor: pointer;
+  }
+
+  /* Sign In */
+
+  section .box{
+    background-color: rgb(104, 104, 104);
+    flex-direction: column;
+    width: 36vw;
+    text-align: center;
+    margin-left: 30vw;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  section .box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+     padding-bottom: 70px;
+
+  }
+
+  section .box form input{
+    height: 40px;
+    padding: 20px ;
+    margin: 6px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    
+  }
+  section .box form button{
+    height: 40px;
+    padding: 20px ;
+    margin: 6px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    padding-top: 12px;
+    margin-top: 30px;
+
+  }
+ section .box h1{
+    padding-top: 25px;
+    padding-bottom: 0px;
+    width: 148px;
+    
+ }
+ #info{
+    text-align: left;
+    margin-left: 5px;
+ }
+
+ #info h4{
+    margin-top: 30px;
+    margin-bottom: 10px;
+ }
+
+ footer{
+    background-color: black;
+    color: rgb(85, 84, 84);
+    text-align: center
+ }
+ footer .foot{
+    width: 500px ;
+    text-align: center;
+    padding-top: 20px;
+ }
+
+ #footer{
+    display: flex;
+    width: 50vw;
+    margin-left: 140px;
+    margin-top: 30px;
+ }
+
+ #footer p{
+    width: 30vw;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 0px;
+ }
+ 
+
+ 
+
